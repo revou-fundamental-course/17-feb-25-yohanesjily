@@ -67,6 +67,26 @@ main>header {
     text-align: center;
 }   
 
+.main-banner {
+    height: 400px;
+    background-image: url("https://picsum.photos/1200/400");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img-1 {
+    background-image: url(https://picsum.photos/1235);
+}
+
+.banner-img-2 {
+    background-image: url(https://picsum.photos/1210);
+}
+
+.banner-img-3 {
+    background-image: url(https://picsum.photos/1220);
+}
+
+
 #our-package-section>header {
     height: 100px;  
     align-content: center;
@@ -97,4 +117,53 @@ main>header {
 
 footer {
     text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .card {
+        width: 90%;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .main-banner {
+        height: 250px;
+    }
+    .main-container {
+        height: auto;
+    }
+    .main-header {
+        flex-direction: column;
+    }
+    .logo-company {
+        margin-bottom: 10px;
+    }
 }
